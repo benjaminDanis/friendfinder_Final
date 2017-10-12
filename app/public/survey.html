@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+	<title>Jam Session Survey</title>
+</head>
+<body>
+
+<form class="form-group container">
+
+<div class="jumbotron">
+  <h1 class="display-3">Jam Session:</h1>
+  <p class="lead">Online service dedicated to finding the perfect jam buddy.</p>
+  <hr class="my-4">
+  <p>Using a sophisticated algorithim, we will find a fellow guitar player that you'll be able to play with for hours.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="home"><span class="glyphicon glyphicon-home"></span>Go to Home</a>
+
+  </p>
+  <a href="/api/friends">Api Link</a>
+
+</div>
+
+<div class="form-control">
+<label for="nameField">Enter your name: </label><br>
+<input type="text" name="nameField" id="nameField" class="form-control text-input">
+
+<label for="pictureField">Enter a link to your picture: </label><br>
+<input type="text" name="nameField" id="pictureField" class="form-control text-input">
+</div>
+
+
+<label for='questionGroup'>Select an option with 1 being the lowest or least and 5 being the highest or most</label>
+
+<div id="questionGroup">
+<div class="form-control">
+
+<label for="q0">How experienced are you?</label>
+<select class="list form-control" id="q0">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+
+<label for="q1">What is your mastery in acoustic?</label>
+<select class="list form-control" id="q1">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+<label for="q2">What is your mastery in electric?</label>
+<select class="list form-control" id="q2">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+<label for="q3">How likely are you to play fingerstyle?</label>
+<select class="list form-control" id="q3">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+<label for="q4">How likely are you to play with a pick?</label>
+<select class="list form-control" id="q4">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+<label for="q5">How likely are to play blues/rock?</label>
+<select class="list form-control" id="q5">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+<label for="q6">How likely are you to play country?</label>
+<select class="list form-control" id="q6">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+<label for="q7">How likely are you to play classical?</label>
+<select class="list form-control" id="q7">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+<label for="q8">How likely are you to play jazz?</label>
+<select class="list form-control" id="q8">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+<br>
+
+
+<label for="q9">How likely are you to play folk?</label>
+<select class="list form-control" id="q9">
+<option value='defaultVal'>Select an Answer</option>
+<option value='1'>1</option>
+<option value='2'>2</option>
+<option value='3'>3</option>
+<option value='4'>4</option>
+<option value='5'>5</option>
+</select>
+
+</div>
+</div>
+
+<br><br><br><br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id='submitButton' data-toggle="modal" data-target="#exampleModal">
+  Submit
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="#" id="imgHolder">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+</form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+$('#submitButton').on('click', function(){
+	submitParticipant();
+  
+})
+
+function Value(answer){
+	this.answer = answer;
+}
+
+function submitParticipant(){
+
+	var newBuddy = {
+		name: $('#nameField').val().trim(),
+		picture: $('#pictureField').val(),
+		score: []
+
+	}
+
+	for (var i = 0; i < 10; i++) {
+		var value = new Value($('#q' + i).find(':selected').text());
+		newBuddy.score.push(value.answer);
+    
+	}
+
+  $('.list').prop('selectedIndex', 0);
+  $('.text-input').val('');
+
+	console.log(newBuddy);
+
+	$.post('/api/friends', newBuddy).
+	 done(function(data){
+		console.log(data);
+
+    $('#exampleModalLabel').html(data.name);
+    $('#imgHolder').attr('src', data.photo);
+
+    
+
+	})
+}
+
+
+
+</script>
+
+
+
+
+
+
